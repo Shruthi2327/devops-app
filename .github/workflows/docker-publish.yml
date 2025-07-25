@@ -1,6 +1,3 @@
-
-
-
 name: Build and Push Docker image
 
 on:
@@ -24,3 +21,7 @@ jobs:
 
       - name: Push Docker image
         run: docker push pandu2327/devops-app:latest
+
+      - name: Trigger Render Deploy
+        run: |
+          curl -X POST https://api.render.com/deploy/srv-d21jc7vgi27c73e09rbg?key=mCLfsxCS4EY
