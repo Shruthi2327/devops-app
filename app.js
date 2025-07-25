@@ -3,13 +3,13 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-  res.send("🚀 CI/CD working or not???");
+  res.send("🚀 CI/CD working!!!! I LOVE YOU DEVOPS");
 });
 
 
 app.get("/about", (req, res) => {
-  console.log("Updated About Route Hit!");
-  res.send("This is the UPDATED About Page!");
+  console.log("Aboutt!!!!");
+  res.send("About bolthe");
 });
 
 
