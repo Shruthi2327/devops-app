@@ -3,12 +3,13 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-  res.send("🚀 Deployed using Docker and Render! I am learning fast and furiously");
+  res.send("🚀 CI/CD working or not???");
 });
 
 
 app.get("/about", (req, res) => {
-  res.send("This is the about page!");
+  console.log("Updated About Route Hit!");
+  res.send("This is the UPDATED About Page!");
 });
 
 
